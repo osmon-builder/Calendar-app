@@ -1,0 +1,111 @@
+
+
+.calendar {
+    box-sizing: border-box;
+    font-size: 1rem;
+    max-width: 100%;
+        
+  }
+  
+  
+  
+.daynames {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    border-radius: 100px;
+   
+  }
+  
+    
+
+  .calendar .week {
+   
+    width: calc(100% / 7);
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;    
+    font-weight: 100%;
+    
+  }
+  .calendar .week div {
+    width: 100%;
+    
+    
+  }
+  
+  .calendar .day {
+    position: relative;
+    width: calc(100% / 7);
+    height: 44px;
+    display: inline-block;
+    background-color: white;
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+    
+  }
+  
+  .calendar .day div {
+    width: 100px;
+    height: 100px;
+    position: relative;    
+    z-index: 100;
+    line-height: 100px;
+  }
+  
+<<<<<<< HEAD
+  .calendar .day div.before, .calendar .day div.month,  .calendar .day div.today {
+    color: gray;
+  }
+   
+=======
+  .calendar .day div.before {
+    color: gray;
+  }
+ 
+
+>>>>>>> 143a851db928f325efc614ad3b81446e7fc90546
+ 
+  
+  .calendar .day div.selected {
+    background-color: rgb(230, 126, 95);
+    color: white  ;
+    font-weight: bold;
+  }
+  
+  
+
+  .container {
+    border-color: skyblue;
+  }
+ .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: skyblue;
+    padding: 50px;
+    z-index: 1000;
+  }
+
+ 
+ .popup-title {
+   color: black;
+   justify-content: space-between;  
+  }
+
+  .time {
+    justify-content: space-between;
+  }
+
+
+
